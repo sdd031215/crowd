@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息_资金流水</title>
+    <link rel="stylesheet" type="text/css" href="css/share.css" />
+    <link rel="stylesheet" type="text/css" href="css/currency.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script type='text/javascript' src='js/jquery-1.9.1.min.js'></script>
+    <script type='text/javascript' src='js/template.js'></script>
+    <script type='text/javascript' src='js/script.js'></script>
+    <script type='text/javascript' src='js/return.js'></script>
+    <script type='text/javascript' src='js/moneydetail.js'></script>
+</head>
+<body>
+<!--头部-->
+<div class="wm-width100 wm-color-33 head_box">
+    <div class="wm-width1220 margin_auto line-height40">
+        <div class="wm-size14 wm-ft-ff fl wm-width50">
+            <a class="wm-ft-ff wm-padding-right10" href="#">中科电商谷</a>|
+            <a class="wm-ft-ff wm-padding-right10" href="#">中科众包</a>
+        </div>
+        <div class="wm-size14 wm-ft-ff fl wm-width50 text-right">
+            <span class="user relative moreLi moreA" href="#">
+                <div class="portrait">
+                    <span class="radius-wrap"></span>
+                    <a href="#" class="header-icon"><img src="img/remen2.png" alt="头像"width="26" height="26" /></a>
+                </div>
+                <span>lisa</span>
+                <img class="wm-padding-bottom2 wm-padding-left2" src="img/xl2.png" alt="箭头" width="10" height="5" />
+                <div class="items absolute relative">
+                    <i class="arrow"></i>
+                    <ul class="down_box">
+                        <li class="down down_1"><a href="my.html">个人主页</a></li>
+                        <li class="down"><a href="#">退出登录</a></li>
+                    </ul>
+                </div>
+            </span>
+            <span class="proj_bx news" href="#">消息通知<img class="wm-padding-bottom2 wm-padding-left7" src="img/xl1.png" alt="箭头"width="10" height="5" /></span>
+            <span class="proj_bx project relative moreLi1 moreA1">我的项目
+                <div class="items1 absolute relative">
+                    <i class="arrow"></i>
+                    <ul class="down_box">
+                        <li class="down down_1"><a href="myjoin.html">参与的项目</a></li>
+                        <li class="down"><a href="myrelease.html">发布的项目</a></li>
+                    </ul>
+                </div>
+            </span>
+        </div>
+    </div>
+</div>
+<!--logo-->
+<div class="wm-width100 logo_box">
+    <div class="wm-width1220 margin_auto overflow">
+        <h1 class="logo fl"><a href="#"><img src="img/logo.png" alt="logo" width="235" height="57" /></a></h1>
+        <div class="fl wm-ft-22 wm-size24 overflow">
+            <a class="fication" href="index.html">接需求</a>|
+            <a class="fication fication_xz" href="index_per.html">找人才<span class="fiton"></span></a>
+        </div>
+        <div class="fr wm-width wm-height100">
+            <a class="elease wm-ridus5" href="release.html">发布项目</a>
+        </div>
+    </div>
+</div>
+<!--我的位置-->
+<div class="wm-width100 line-height70 wm-border-solid-bottom-e5e5e5 wm-color-ff">
+    <div class="wm-width1220 margin_auto wm-ft-33 wm-size14">
+        <span>当前位置：</span>
+        <a class="wm-ft-33 wm-padding-lr3 xiaoshou">首页</a><span class="wm-padding-left5">></span>
+        <a class="wm-ft-33 wm-padding-lr3 xiaoshou">个人信息</a><span class="wm-padding-left5">></span>
+        <a class="wm-ft-33 wm-padding-lr3 xiaoshou">账户信息</a>
+    </div>
+</div>
+
+<!--个人信息-->
+<div class="wm-width100 wm-color-f5 wm-padding-top40 wm-padding-bottom100">
+    <div class="wm-width1220 margin_auto overflow">
+        <div class="fl personal_left">
+            <ul class="wm-border-solid-e5e5e5 wm-color-ff wm-ridus10">
+                <li><a class="mation wm-border-solid-bottom-e5e5e5" href="my.html">账户信息</a></li>
+                <li><a class="mation wm-border-solid-bottom-e5e5e5" href="#">资料填写</a></li>
+                <li><a class="mation wm-border-solid-bottom-e5e5e5" href="#">身份认证</a></li>
+                <li><a class="mation wm-border-solid-bottom-e5e5e5 mation_xuan" href="javascript:;">资金流水</a></li>
+                <li><a class="mation wm-border-solid-bottom-e5e5e5" href="#">账户安全</a></li>
+                <li><a class="mation wm-border-solid-bottom-e5e5e5" href="myjoin.html">参与的项目</a></li>
+                <li><a class="mation wm-border-solid-bottom-e5e5e5" href="myrelease.html">发布的项目</a></li>
+                <li><a class="mation" href="mycomment.html">我的评价</a></li>
+            </ul>
+        </div>
+        <div class="fl personal_right">
+            <div class="wm-color-ff wm-ridus10 wm-border-solid-e6e6e6 overflow">
+                <div class="wm-padding-lr20 fl wm-border-solid-right-e5e5e5 wm-width35">
+                    <p class="wm-size22 wm-weight600 wm-ft-44 wm-padding-tb30">账户余额<span class="wm-size28 wm-ft-ed0000 wm-padding-left20">¥2000</span></p>
+                    <div class="overflow wm-padding-bottom20">
+                        <button class="tixian_but fl" type="button">提现</button>
+                        <button class="tixian_but fr wm-ft-ff wm-color-f13340" type="button">充值</button>
+                    </div>
+                </div>
+                <div class="fl wm-width20 text-center wm-border-solid-right-e5e5e5 wm-padding-tb40">
+                    <span class="display wm-size28 wm-ft-ed0000 wm-weight600">2000<span class="wm-size18">元</span></span>
+                    <span class="display wm-size16 wm-ft-55 wm-weight600 wm-padding-top32">总收入</span>
+                </div>
+                <div class="fl wm-width20 text-center wm-border-solid-right-e5e5e5 wm-padding-tb40">
+                    <span class="display wm-size28 wm-ft-ed0000 wm-weight600">2000<span class="wm-size18">元</span></span>
+                    <span class="display wm-size16 wm-ft-55 wm-weight600 wm-padding-top32">总收入</span>
+                </div>
+                <div class="fl wm-width20 text-center wm-padding-tb40">
+                    <span class="display wm-size28 wm-ft-ed0000 wm-weight600">2000<span class="wm-size18">元</span></span>
+                    <span class="display wm-size16 wm-ft-55 wm-weight600 wm-padding-top32">总收入</span>
+                </div>
+            </div>
+            <div class="overflow wm-border-solid-e5e5e5 wm-color-ff wm-ridus10 wm-margin-top20 ">
+                <div class="fl wm-width80 wm-padding-lr10 wm-border-solid-left-e6e6e6 wm-padding-tb15">
+                    <a class="screen screen_xz wm-ridus5" href="#">项目交易</a>
+                    <a class="screen" href="#">充值提现</a>
+                </div>
+            </div>
+            <div class="overflow wm-padding-top35 wm-padding-bottom20">
+                <div class="fl wm-width80 wm-size16 wm-weight600 wm-ft-88 line-height26">
+                    <span class="wm-padding-right20 wm-padding-left10"><a class="sheet wm-ft-88" href="javascript:;">全部</a></span>·
+                    <span class="wm-padding-right20 wm-padding-left10"><a class="sheet wm-ft-ff725f" href="javascript:;">已到账收入</a></span>·
+                    <span class="wm-padding-right20 wm-padding-left10"><a class="sheet wm-ft-88" href="javascript:;">未到账收入</a></span>·
+                    <span class="wm-padding-right20 wm-padding-left10"><a class="sheet wm-ft-88" href="javascript:;">支出</a></span>·
+                    <span class="wm-padding-right20 wm-padding-left10"><a class="sheet wm-ft-88" href="javascript:;">未确认支出</a></span>
+                </div>
+                <div class="wm-width10 fr text-right overflow">
+                    <span><a class="fl" href="#"><img src="img/xz.png"/></a></span>
+                    <span><a class="fl" href="#"><img src="img/xy.png"/></a></span>
+                </div>
+            </div>
+            <div class="wm-color-ff wm-ridus10 wm-border-solid-e6e6e6 overflow">
+                <table class="wm-width100"  border="0" cellspacing="0" cellpadding="0">
+                    <tbody id="data">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script id="data_tpl" type="text/html">
+    <tr class="text-center line-height60 wm-color-fb wm-ft-88 wm-size16 wm-weight600">
+        <th class="wm-border-solid-bottom-e6e6e6 spot_1 wm-padding-lr10 wm-border-solid-right-f1">项目编号</th>
+        <th class="wm-border-solid-bottom-e6e6e6 spot_1 wm-padding-lr10 wm-border-solid-right-f1">资金类型</th>
+        <th class="wm-border-solid-bottom-e6e6e6 spot_1 wm-padding-lr10 wm-border-solid-right-f1">发布时间</th>
+        <th class="wm-border-solid-bottom-e6e6e6 spot_1 wm-padding-lr10 wm-border-solid-right-f1">项目标题</th>
+        <th class="wm-border-solid-bottom-e6e6e6 spot_1 wm-padding-lr10 wm-border-solid-right-f1">项目金额</th>
+        <th class="wm-border-solid-bottom-e6e6e6 spot_1 wm-padding-lr10 wm-border-solid-right-f1">项目状态</th>
+        <th class="wm-border-solid-bottom-e6e6e6 spot_1 wm-padding-lr10 wm-border-solid-right-f1">资金状态</th>
+    </tr>
+    <%for(var i = 0; i < list.length; i++){%>
+    <tr class="text-center line-height60 wm-color-ff wm-ft-88 wm-size14 wm-weight600">
+        <td class="wm-border-solid-bottom-e6e6e6 wm-border-solid-right-f1">12312424</td>
+        <td class="wm-border-solid-bottom-e6e6e6 wm-border-solid-right-f1">收入</td>
+        <td class="wm-border-solid-bottom-e6e6e6 wm-border-solid-right-f1">2016-09-06</td>
+        <td class="wm-border-solid-bottom-e6e6e6 wm-border-solid-right-f1">企业官网设计</td>
+        <td class="wm-border-solid-bottom-e6e6e6 wm-border-solid-right-f1">3000元</td>
+        <td class="wm-border-solid-bottom-e6e6e6 wm-border-solid-right-f1">实施中</td>
+        <td class="wm-border-solid-bottom-e6e6e6 wm-border-solid-right-f1">未确认支出</td>
+    </tr>
+    <%}%>
+</script>
+
+
+
+
+<!--尾部-->
+<div class="wm-width1220 margin_auto_20 wm-padding-top30">
+    <div class="wm-width100 wm-border-solid-bottom-d2cdce overflow wm-padding-bottom30">
+        <div class="wm-width60 overflow fl">
+            <dl class="wm-padding-right120 fl">
+                <dt class="wm-size18 wm-weight600 wm-ft-44 wm-padding-bottom10"><a href="#">关于我们</a></dt>
+                <dd class="wm-size14 wm-ft-66 wm-padding-tb5"><a href="#">联系我们</a></dd>
+                <dd class="wm-size14 wm-ft-66 wm-padding-tb5"><a href="#">加入我们</a></dd>
+                <dd class="wm-size14 wm-ft-66 wm-padding-tb5"><a href="#">公司介绍</a></dd>
+                <dd class="wm-size14 wm-ft-66 wm-padding-tb5"><a href="#">公司介绍</a></dd>
+            </dl>
+            <dl class="wm-padding-right120 fl">
+                <dt class="wm-size18 wm-weight600 wm-ft-44 wm-padding-bottom10"><a href="#">关于公司</a></dt>
+                <dd class="wm-size14 wm-ft-66 wm-padding-tb5"><a href="#">服务条款</a></dd>
+                <dd class="wm-size14 wm-ft-66 wm-padding-tb5"><a href="#">帮助中心</a></dd>
+            </dl>
+            <dl class="wm-padding-right120 fl">
+                <dt class="wm-size18 wm-weight600 wm-ft-44 wm-padding-bottom10"><a href="#">关于我们</a></dt>
+                <dd class="wm-size14 wm-ft-66 wm-padding-tb5"><a href="#">新浪微博</a></dd>
+                <dd class="wm-size14 wm-ft-66 wm-padding-tb5"><a href="#">官方微信</a></dd>
+                <dd class="wm-size14 wm-ft-66 wm-padding-tb5"><a href="#">官方贴吧</a></dd>
+            </dl>
+        </div>
+        <div class="wm-width40 fl text-right">
+            <a href="#" class="zix_but wm-ridus5">在线咨询</a>
+            <p class="wm-size35 wm-ft-44 wm-padding-tb10">400-619-8888</p>
+            <p class="wm-size16 wm-ft-bdbdbd">如需帮助请致电，周一至周五</p>
+        </div>
+    </div>
+    <div class="wm-width100 overflow wm-padding-top40 wm-padding-bottom25">
+        <div class="wm-width80 fl">
+            <p class="wm-size14 wm-ft-434d55">
+                <span class="wm-padding-right5">Copyright @ 2016,J.M.Media Technology Co. ，Ltd. All Rights Reserved北京嘉曼传媒科技有限公司</span>
+                |<a href="#" class="wm-ft-ff725f wm-padding-lr9">服务条款</a>
+                <span class="wm-ft-00a4df">|</span><a href="#" class="wm-ft-ff725f wm-padding-lr9">隐私条款</a>
+            </p>
+            <p class="wm-padding-top20 wm-size14 wm-ft-bdbdbd">
+                <span class="wm-padding-right20">京ICP备案1021213</span>
+                <span>京ICP许可证1021213 </span>
+            </p>
+        </div>
+        <div class="wm-width20 fl text-right">
+            <img src="img/bah.png"/>
+        </div>
+    </div>
+</div>
+<!--返回顶部-->
+<div id="CfloatBtn" class="CfloatBtn">
+    <span id="scroll_Top" class="scroll_Top" onclick="$.$w.windowScroll(0);"></span>
+</div>
+</body>
+</html>

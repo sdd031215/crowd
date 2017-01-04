@@ -1,0 +1,22 @@
+2017-01-04 21:59:49.041  INFO 26883 --- [main] com.crowd.Application                    : Starting Application on ebj2023.local with PID 26883 (/Users/user/Documents/workspace/crowd/target/classes started by user in /Users/user/Documents/workspace/crowd)
+2017-01-04 21:59:49.045  INFO 26883 --- [main] com.crowd.Application                    : The following profiles are active: dev
+2017-01-04 21:59:54.000  INFO 26883 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-01-04 21:59:54.004  INFO 26883 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-01-04 21:59:54.310  INFO 26883 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-01-04 21:59:56.217  INFO 26883 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-01-04 21:59:56.657  INFO 26883 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2017-01-04 21:59:56.661  INFO 26883 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-01-04 21:59:56.667  INFO 26883 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-01-04 21:59:56.844  INFO 26883 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-01-04 21:59:57.464  INFO 26883 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-01-04 21:59:59.710  INFO 26883 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-01-04 22:00:00.184  INFO 26883 --- [main] com.crowd.tools.LogUtils                 : ---------
+2017-01-04 22:00:00.187  INFO 26883 --- [Thread-2] com.crowd.tools.LogUtils                 : ---------------》enter monitor《----------------------
+2017-01-04 22:00:01.557  INFO 26883 --- [main] com.crowd.Application                    : Started Application in 14.542 seconds (JVM running for 15.538)
+2017-01-04 22:00:27.526  INFO 26883 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-01-04 22:00:27.788  WARN 26883 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2017-01-04 22:00:27.788 ERROR 26883 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'crowdsourcing.city' doesn't exist
+2017-01-04 22:10:00.235  INFO 26883 --- [Thread-2] com.crowd.tools.LogUtils                 : rerank.log发生了ENTRY_MODIFY事件
+2017-01-04 22:25:00.293  INFO 26883 --- [Thread-2] com.crowd.tools.LogUtils                 : rerank.log发生了ENTRY_MODIFY事件

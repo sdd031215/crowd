@@ -6,11 +6,11 @@
 	    <artifactId>spring-boot-starter-parent</artifactId>
 	    <version>1.4.2.RELEASE</version>
 	</parent>
-	<groupId>com.elong</groupId>
-	<artifactId>rerankscore</artifactId>
+	<groupId>com.crowd</groupId>
+	<artifactId>mall</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>reranklog Maven Webapp</name>
+	<name>crowd log Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<organization>
 		<name>Pivotal Software, Inc.</name>
@@ -19,10 +19,9 @@
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
 		<m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>
-		<start-class>com.elong.Application</start-class>
+		<start-class>com.crowd.Application</start-class>
 		<java.version>1.8</java.version>
-		
-	</properties>
+	</properties> 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -30,12 +29,11 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.tomcat.embed</groupId>
-			<artifactId>tomcat-embed-jasper</artifactId>
+		<dependency> 
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -48,30 +46,10 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-		   <groupId>org.json</groupId>
-		   <artifactId>json</artifactId>
-		   <version>20080701</version>
-		</dependency>
-		<!-- <dependency>
-	         <groupId>org.mvnsearch.spring.boot</groupId>
-	         <artifactId>spring-boot-starter-httpclient</artifactId>
-	         <version>1.0.0-SNAPSHOT</version>
-	  	</dependency> -->
-		<dependency>
-			<groupId>org.apache.httpcomponents</groupId>
-			<artifactId>httpclient</artifactId>
-			<version>4.4</version>
-		</dependency>
-		<dependency>
-		    <groupId>net.sf.json-lib</groupId>
-		    <artifactId>json-lib</artifactId>
-		    <version>2.4</version>
-		</dependency>
-		<!-- <dependency>
-            <groupId>com.elong.hotel</groupId>
-            <artifactId>sa_commonutils</artifactId>
-            <version>1.9.11-rp-SNAPSHOT</version>
-        </dependency> -->
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <!-- <scope>compile</scope> -->
+        </dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -88,4 +66,56 @@
 			</plugin>
 		</plugins>
 	</build>
+	<repositories>
+		<repository>
+			<id>mvnrepository</id>
+			<name>mvnrepository</name>
+			<url>http://mvnrepository.com/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>http://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>http://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>http://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>http://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-releases</id>
+			<name>Spring Releases</name>
+			<url>http://repo.spring.io/release</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
 </project>

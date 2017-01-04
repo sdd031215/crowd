@@ -1,0 +1,62 @@
+
+/*img³ß´ç*/
+.img_1{width: 224px; height:200px;}
+.img_2{width: 230px; height:130px;}
+
+
+/*°´Å¥ÑùÊ½*/
+.service{font-size: 12px; color: #fff; background: #f13340; padding:5px 8px;}
+.elease{ line-height: 100px; background: #ff725f; padding: 10px 20px; color: #fff; font-size: 14px;}
+.jr_shop{background: #fafafa; border: 1px solid #e5e5e5; padding: 10px 20px; color: #444; font-size: 14px; display: inline-block;}
+.search_tj{background: #ff6e5b; color: #fff; font-size: 18px; padding: 8px 30px; margin-top: 20px;}
+.qiysj_wx{color: #8c8c8c; font-size: 12px; display: inline-block; border: 1px solid #e5e5e5; padding: 3px 8px;}
+.zix_but{display: inline-block; font-size: 20px; color: #fff; background:#ff725f url("../img/zxzx.png") no-repeat 13px 9px; padding: 10px 15px 10px 45px;}
+.zix_but:hover{color: #fff;}
+.demand_1{color: #444; font-size: 13px; border: 1px solid #e5e5e5; width:90px; height: 34px; line-height: 32px; text-align: center; background: #fff; font-weight: 600;cursor:pointer;}
+.boams{display: inline-block; color: #fff; padding: 3px 8px;}
+.task_but{background: #f6f6f6; border: 1px solid #e5e5e5; color: #dadada; font-size: 22px; filter:chroma(color=#000000); padding: 10px 20px; margin: 0 20px; cursor:pointer;}
+.task_but_2{background: #e50329; border: 1px solid #e5e5e5; color: #fff; font-size: 22px; font-weight: 600; filter:chroma(color=#000000); padding: 10px 20px; margin: 0 20px; cursor:pointer;}
+.modify{background: #e50329; border: 1px solid #e5e5e5; color: #fff; padding:12px 20px;}
+.modify:hover{color: #fff;}
+.tixian_but{width: 140px; height: 50px; font-size: 22px; background: #f6f6f6; color: #dadada; font-weight: 600; border: 1px solid #e5e5e5; cursor:pointer;filter:chroma(color=#000000);-webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;}
+.del_shan{width: 90px; height: 36px; border: 1px solid #e5e5e5; background: url("../img/shanchu.png") repeat-x; cursor:pointer; font-size: 14px; color: #444; font-weight: 600; margin-left: 18px;}
+
+
+/*·µ»Ø¶¥²¿*/
+.CfloatBtn{position:fixed; right:10px; bottom:70px; width:60px; -index:199; }
+.CfloatBtn a{ display:block; background:url(../img/to_top.png); width:60px; height:60px; }
+.CfloatBtn span { display:block; background:url(../img/to_top.png) 0 -61px; width:60px; height:60px; cursor:pointer; }
+.CfloatBtn span:hover { background-position:-60px -61px; }
+
+
+/*·­Ò³*/
+.elip_box{border-top: 2px solid #e5e5e5; }
+.elip{padding: 10px 0px; margin: 0 auto;    display: table;}
+.elip_fy{display: inline-block; font-size: 18px; font-weight: 600; color: #444;cursor:pointer; padding: 0 10px;}
+.elip_qy{display: inline-block;width: 56px; height: 56px; line-height: 56px; text-align: center; font-size: 18px; font-weight: 600; color: #444; cursor:pointer;}
+.elip_xz{background: url("../img/xyy.png") no-repeat; color: #fff;}
+
+
+
+
+/*µ¯´°*/
+.eject{cursor:pointer;}
+.backg{background-color:#666666; position:absolute; z-index:99; left:0; top:0; display:none; width:100%; height:1000px; opacity:0.5; filter:alpha(opacity=50); -moz-opacity:0.5;}
+.eject_box{position:absolute; width:520px; left:50%; margin-top: 200px; margin-left:-260px; z-index:999; background-color:#fff; border:1px #e5e5e5 solid;}
+.eject_bt{height: 69px; line-height: 69px; background: url("../img/tanc_bj.png");border-radius:10px 10px 0px 0px; border-bottom: 1px solid #e5e5e5;font-size: 22px; font-weight: 600; color: #555;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

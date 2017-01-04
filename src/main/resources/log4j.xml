@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
+	debug="false">
+	<appender name="File" class="org.apache.log4j.RollingFileAppender">
+		<param name="encoding" value="utf-8" />
+		<param name="File" value="${log.path}/crowdsourcing-mall-web.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="512MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy/MM/dd HH:mm:ss,SSS} %l %t %p - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy/MM/dd HH:mm:ss,SSS} %l %t %p - %m%n" />
+		</layout>
+	</appender>
+
+	<!-- mybatis start -->
+	<category name="net.carefx" additivity="false">
+		<priority value="${mybatis.log}" />
+		<appender-ref ref="console" />
+	</category>
+	<category name="org.springframework" additivity="false">
+		<priority value="INFO" />
+		<appender-ref ref="console" />
+	</category>
+	<category name="org.springframework.orm.ibatis3" additivity="false">
+		<priority value="ERROR" />
+		<appender-ref ref="console" />
+	</category>
+	<category name="org.apache.ibatis" additivity="false">
+		<priority value="${mybatis.log}" />
+		<appender-ref ref="console" />
+	</category>
+	<category name="java.sql" additivity="false">
+		<priority value="ERROR" />
+		<appender-ref ref="console" />
+	</category>
+	<logger name="org.apache.ibatis.common.jdbc.SimpleDataSource">
+		<level value="${mybatis.log}" />
+	</logger>
+	<logger name="org.apache.ibatis.common.jdbc.SimpleDataSource">
+		<level value="${mybatis.log}" />
+	</logger>
+	<logger name="org.apache.ibatis.common.jdbc.ScriptRunner">
+		<level value="${mybatis.log}" />
+	</logger>
+	<logger name="org.apache.ibatis.common.jdbc.SqlMapClientDelegate">
+		<level value="${mybatis.log}" />
+	</logger>
+	<logger name="java.sql.Connection">
+		<level value="${mybatis.log}" />
+	</logger>
+	<logger name="java.sql.Statement">
+		<level value="${mybatis.log}" />
+	</logger>
+	<logger name="java.sql.PreparedStatement">
+		<level value="${mybatis.log}" />
+	</logger>
+	<logger name="java.sql.ResultSet">
+		<level value="${mybatis.log}" />
+	</logger>
+	<!-- mybatis end -->
+
+
+	<root>
+		<level value="${mybatis.log}" />
+		<appender-ref ref="File" />
+		<appender-ref ref="console" />
+	</root>
+</log4j:configuration>
